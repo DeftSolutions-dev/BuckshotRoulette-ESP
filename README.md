@@ -53,12 +53,17 @@ The binary is statically linked (`/MT`), no vcruntime dependency. Runs on any Wi
 
 ```
 src/
-  main.cxx               entry point, game loop
-  config.cxx / .hxx      saves game path and patch status
-  patcher.cxx / .hxx     finds Steam via registry, auto-detects game, runs GDRE patcher
-  esp.cxx / .hxx         parses shell data, tracks rounds/shots/items
-  overlay.cxx / .hxx     GDI overlay rendering
-  embedded_scripts.hxx   patched GDScript files (generated, ~400KB)
+├── main.cxx              # Entry point, main game loop
+├── config.cxx            # Game path and patch status management
+├── config.hxx
+├── patcher.cxx           # Finds Steam via registry, auto-detects game, runs GDRE patcher
+├── patcher.hxx
+├── esp.cxx               # Parses shell data, tracks rounds/shots/items
+├── esp.hxx
+├── overlay.cxx           # GDI overlay rendering
+├── overlay.hxx
+└── embedded_scripts.hxx  # Patched GDScript files (generated, ~400KB)
+
 CMakeLists.txt
 build.bat
 ```
