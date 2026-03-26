@@ -1,4 +1,4 @@
-# BuckshotESP
+# BuckshotESP (Game version - v2.2.0.6)
 
 Shell ESP for Buckshot Roulette. Shows the shell order if you're hosting, or tracks items and calculates odds if you're a client.
 
